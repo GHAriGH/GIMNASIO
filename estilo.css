@@ -80,27 +80,34 @@ header {
     color: #ffffff;
     font-size: 55px;
 }
-.header-text p{
-    margin-top: 35px;
+.header-text p {
+    font-size: 20px;
+    margin-top: 40px;
     color: #ffffff;
 }
 
-.btn-1{
+.btn-1 {
     display: inline-block;
     background-color: #f61706;
     margin-top: 35px;
     padding: 15px 25px;
     color: #ffffff;
+    border-radius:35px;
+    transition: transform 0.3s ease;
 }
 
 .btn-1:hover{
     background-color: #cd1103;
+    transform: translate(0, -6px);
 }
 
 .servicios {
     padding: 50px 0px;
     text-align: center;
     color: white;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
 }
 
 .servicios h2 {
@@ -110,7 +117,7 @@ header {
 
 .txt-1 {
     font-size: 15px;
-    padding: 0px 200px;
+    padding: 0px 20px;
 }
 
 .grupo-servicios {
@@ -119,21 +126,87 @@ header {
 }
 
 .servicios {
+    position: relative;
+    width: 300px;
+    height: 350px;
     padding: 35px 25px;
 }
 
-.servicios img {
+/*.servicios img {
     width: 220px;
     height: 150px;
     margin-bottom: 25px;
+}*/
+
+.servicios .face {
+    position: absolute;
+    width: 300px;
+    height: 350px%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
 }
-.servicios h3 {
+
+.servicios .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.servicios .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.servicios .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.servicios .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #273746;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #2C3E50;
+}
+
+.servicios .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.servicios .back p {
+    letter-spacing: 1px;
+} 
+
+/*.servicios h3 {
     font-size: 22px;
     margin-bottom: 15px;
-}
+}*/
 
 .servicios p {
     font-size: 18px;
+}
+
+.servicios:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.servicios:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 .portfolio {
