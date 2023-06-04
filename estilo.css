@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /*text-transform: capitalize;*/
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(MEDIA/pesas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #f61706;
+}
+
+.menu .navbar ul{
+    list-style: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f61706;
+}
+#menu{
+    display: none;
+} 
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-text{
+    text-align: center;
+    width: 700px;
+}
+.header-text h1{
+    color: #ffffff;
+    font-size: 55px;
+}
+.header-text p{
+    margin-top: 35px;
+    color: #ffffff;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #f61706;
+    margin-top: 35px;
+    padding: 15px 25px;
+    color: #ffffff;
+}
+
+.btn-1:hover{
+    background-color: #cd1103;
+}
+
+.servicios {
+    padding: 50px 0px;
+    text-align: center;
+    color: white;
+}
+
+.servicios h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.txt-1 {
+    font-size: 15px;
+    padding: 0px 200px;
+}
+
+.grupo-servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios {
+    padding: 35px 25px;
+}
+
+.servicios img {
+    width: 220px;
+    height: 150px;
+    margin-bottom: 25px;
+}
+.servicios h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.servicios p {
+    font-size: 18px;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.portfolio-txt {
+    margin-bottom: 50px;
+}
+
+.portfolio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.portfolio-txt p {
+    font-size: 15px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img {
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(MEDIA/gym.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: white;
+}
+
+.bg-txt h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.gb-txt p {
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+.precios {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.precio {
+    text-align: center;
+}
+
+.precio h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.precio ul li {
+    font-size: 18px;
+}
+
+footer {
+    padding: 150px 0px;
+  }
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 25px;
+ }
+
+ .enlace li {
+    list-style: none;
+ }
+
+ .enlace a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+ .enlace form {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .btn-2 {
+    padding: 10px 25px;
+    border: 0;
+ }
+
+ .btn-3 {
+    background-color: #f61706;
+    padding: 10px 25px;
+    border: 0;
+    color: #ffffff;
+    margin-top: 15px;
+ }
