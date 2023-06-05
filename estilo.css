@@ -274,12 +274,6 @@ header {
     box-shadow: 0 5px 10px #2C3E50;
 }
 
-.card-suc .back h3 {
-    font-size: 25px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-
 .card-suc .map-responsive{
     overflow:hidden;
     padding-bottom:100%;
