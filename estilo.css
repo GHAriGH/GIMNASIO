@@ -290,7 +290,6 @@ header {
     position:absolute;
 }
 
-
 .card-suc:hover .frente {
     transform: perspective(600px) rotateY(180deg);
 }
@@ -315,12 +314,12 @@ header {
 }
 
 .bg-txt h2 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 35px;
 }
 
-.gb-txt p {
-    font-size: 10px;
+.bg-txt p {
+    font-size: 20px;
     margin-bottom: 25px;
 }
 
@@ -340,7 +339,13 @@ header {
     margin-bottom: 25px;
 }
 
+.precio h2 {
+    font-size: 30;
+    margin-bottom: 20px ;
+}
+
 .precio ul li {
+    list-style: none;
     font-size: 18px;
 }
 
@@ -402,14 +407,19 @@ footer {
         background-color: #f61706;
         display: none;
     }
-    .menu .navbar ul li a:hover {
-        color: lightgray;
+    .menu .navbar ul li {
+        
+        width: 100%;
     }
-    .menu:checked ~.navbar {
+    .menu .navbar ul li a:hover {
+        background-color: lightgray;
+        color: black;
+    }
+    #menu:checked ~ .navbar {
         display: initial;
     }
     .menu-icono {
-        width: 25px;
+        width: 30px;
     }
     header {
         height: 50vh;
@@ -431,4 +441,5 @@ footer {
     .servicio {
         margin-bottom: 20px;
     }
+   
  }
