@@ -351,7 +351,7 @@ header {
 }
 
  .footer{
-    background-color: #142b3b;
+    background-color: #212F3C;
     padding: 80px 0;
 }
 
@@ -370,7 +370,7 @@ header {
     color: white;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #E9967A;
+    border-bottom: 2px solid #f61706;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -404,7 +404,6 @@ header {
 
 .social-links a:hover {
     background-color: gray;
-    padding-left: 6px;
 }
 
 @media(max-width:991px) {
