@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Cada elemento hijo está dentro de los bordes del elemento padre*/
     font-family: Arial, Helvetica, sans-serif;
-    /*text-transform: capitalize;*/
     text-decoration: none;
     list-style: none;
 }
@@ -14,10 +13,10 @@ body {
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(MEDIA/pesas.jpg);
-    background-position: center center;
+    background-position: center center; /*Imagen centrada horizontal y verticalmente en el elemento*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; /*La posición de la imagen queda fija en la pantalla*/
     height: 70vh;
     display: flex;
     align-items: center;
@@ -37,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1000;  /*Posicionado siempre adelante*/
 }
 
 .menu .logo{
@@ -46,20 +45,17 @@ header {
     color: #f61706;
 }
 
-.menu .navbar ul{
-    list-style: none;
-}
-
 .menu .navbar ul li{
     position: relative;
     float: left;
 }
 
 .menu .navbar ul li a{
-    font-size: 18px;
+    font-size: 25px;
     padding: 20px;
     color: #ffffff;
     display: block;
+    transition: transform 0.3s ease;
 }
 
 .menu .navbar ul li a:hover{
@@ -80,21 +76,25 @@ header {
     text-align: center;
     width: 700px;
 }
+
 .header-text h1{
+    margin-top: 70px;
     color: #ffffff;
-    font-size: 55px;
+    font-size: 70px;
 }
+
 .header-text p {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 25px;
+    margin-top: 60px;
     color: #ffffff;
 }
 
 .btn-1 {
     display: inline-block;
     background-color: #f61706;
-    margin-top: 55px;
+    margin-top: 60px;
     padding: 10px 20px;
+    font-size: 20px;
     color: #ffffff;
     border-radius:35px;
     transition: transform 0.3s ease;
@@ -122,6 +122,7 @@ header {
 .txt-1 {
     font-size: 20px;
     padding: 20px 20px;
+    line-height: 30px;
 }
 
 .grupo-servicios {
@@ -217,6 +218,7 @@ header {
 
 .sucursal-txt p {
     font-size: 20px;
+    line-height: 30px;
 }
 
 .sucursal {
@@ -315,7 +317,7 @@ header {
 }
 
 .bg-txt h2 {
-    font-size: 40px;
+    font-size: 55px;
     margin-bottom: 35px;
 }
 
@@ -404,6 +406,7 @@ header {
 
 .social-links a:hover {
     background-color: gray;
+    padding-left: 6px;
 }
 
 @media(max-width:991px) {
